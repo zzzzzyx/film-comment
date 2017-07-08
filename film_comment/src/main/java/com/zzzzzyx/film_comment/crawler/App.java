@@ -114,7 +114,7 @@ public class App
 	 * @return
 	 */
 	public File createFile(String fileName){
-		String path = "data/"+fileName+".txt";
+		String path = "comment_data/"+fileName+".txt";
 		File file = new File(path);
 		if(!file.exists()){
 			try {
