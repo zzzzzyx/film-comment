@@ -26,7 +26,7 @@ public class DatabaseConnector{
 		try {
 			rs = db_public.executeSql("select * from frequency where film=\""+ filmName +"\"");
 			while(rs.next()){
-				String frequency = rs.getString("frequency");
+				int frequency = rs.getInt("frequency");
 				String word = rs.getString("word");
 				commentList.add(new Frequency(frequency,word));	
 			}
