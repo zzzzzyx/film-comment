@@ -12,6 +12,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<mysql.jdbc.version>5.1.38</mysql.jdbc.version>
 	</properties>
 
 	<dependencies>
@@ -21,6 +22,12 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- mysql的依赖 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.jdbc.version}</version>
+        </dependency>
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
@@ -43,10 +50,17 @@
 			<artifactId>commons-lang3</artifactId>
 			<version>3.4</version>
 		</dependency>
-
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.10.2</version>
+        </dependency>
+            <!--<dependency>-->
+            <!--<groupId>org.apdplat</groupId>-->
+            <!--<artifactId>word</artifactId>-->
+            <!--<version>1.3</version>-->
+        <!--</dependency>-->
 	</dependencies>
 
 	<!-- https://mvnrepository.com/artifact/commons-httpclient/commons-httpclient -->
-
-
 </project>
